@@ -34,5 +34,20 @@ Both trainer versions (log vs. no log transformation) save checkpoints with usin
 
 Test result
 ========================
+<img src="./image/f1vsepochs_no_log_tran.png"  height="300">
+Above shows f1 vs epochs with no log transformation applied.
+<img src="./image/f1vsepochs_with_log_tran.png"  height="300">
+Above shows f1 vs epochs with log transformation applied.
 
+We can see the f1 score actually is worse when applying log transformation. According to both graph, epoch 141 is selected for without log transformation version, epoch 121 for with log transformation version to plot f1 and confusion map.
 
+f1 score is 0.73 vs 0.65 for without transformation vs with transformation
+Again, without transformation applied is actually better.
+
+Below is the confusion map:
+
+<img src="./image/confusion_matrix_no_log_tran.png"  height="300">
+above is without transformation
+
+<img src="./image/confusion_matrix_with_log_tran.png"  height="300">
+above is with transformation
