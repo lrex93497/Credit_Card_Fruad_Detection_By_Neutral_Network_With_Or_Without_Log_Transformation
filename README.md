@@ -47,10 +47,8 @@ The model performs better without log transformation (F1 = 0.73) compared to the
 Confusion Matrices
 ------------------------
 <img src="./image/confusion_matrix_no_log_tran.png" height="300">
-No Log Transformation
-
+No Log Transformation 
 <img src="./image/confusion_matrix_with_log_tran.png" height="300">
-With Log Transformation
+With Log Transformation\
 
-The confusion matrices confirm that the no log transformation version outperforms the log-transformed model in terms of classification accuracy and recall.
-
+The confusion matrices confirm that the no log transformation version outperforms the log-transformed model in terms of classification accuracy and recall 
