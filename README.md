@@ -34,20 +34,23 @@ Both trainer versions (log vs. no log transformation) save checkpoints with usin
 
 Test result
 ========================
-<img src="./image/f1vsepochs_no_log_tran.png"  height="300">
-Above shows f1 vs epochs with no log transformation applied.
-<img src="./image/f1vsepochs_with_log_tran.png"  height="300">
-Above shows f1 vs epochs with log transformation applied.
 
-We can see the f1 score actually is worse when applying log transformation. According to both graph, epoch 141 is selected for without log transformation version, epoch 121 for with log transformation version to plot f1 and confusion map.
+F1 Score vs. Epochs
+------------------------
+<img src="./image/f1vsepochs_no_log_tran.png" height="300">
+Without Log Transformation
+<img src="./image/f1vsepochs_with_log_tran.png" height="300">
+With Log Transformation
 
-f1 score is 0.73 vs 0.65 for without transformation vs with transformation
-Again, without transformation applied is actually better.
+The model performs better without log transformation (F1 = 0.73) compared to the version with log transformation (F1 = 0.65).
 
-Below is the confusion map:
+Confusion Matrices
+------------------------
+<img src="./image/confusion_matrix_no_log_tran.png" height="300">
+No Log Transformation
 
-<img src="./image/confusion_matrix_no_log_tran.png"  height="300">
-above is without transformation
+<img src="./image/confusion_matrix_with_log_tran.png" height="300">
+With Log Transformation
 
-<img src="./image/confusion_matrix_with_log_tran.png"  height="300">
-above is with transformation
+The confusion matrices confirm that the no log transformation version outperforms the log-transformed model in terms of classification accuracy and recall.
+
